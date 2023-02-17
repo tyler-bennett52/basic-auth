@@ -8,5 +8,8 @@ const DB_URL = process.env.NODE_ENV === 'test' ? 'sqlite::memory' : process.env.
 
 const db = new Sequelize(DB_URL);
 const userModel = userSchema(db, DataTypes);
+// sequelize allows ua to interact with the usermodel before adding data to the database using the beforeCreate hook.
+
+
 
 module.exports = { db, userModel };
