@@ -14,13 +14,6 @@ const app = express();
 
 app.use(express.json());
 
-// database URL set up (test or dev)
-const DATABASE_URL = process.env.NODE_ENV === 'test' 
-  ? 'sqlite::memory' 
-  : process.env.DATABASE_URL;
-
-const sequelizeDatabase = new Sequelize(DATABASE_URL);
-
 // allows us to accept webform data.  aka process FORM input and add to request body
 app.use(express.urlencoded({extended: true}));
 
@@ -47,4 +40,4 @@ app.post('/signin', basicAuth, (req, res, next) => {
 });
 
 
-module.exports = { app, PORT, sequelizeDatabase }
+module.exports = { app, PORT }

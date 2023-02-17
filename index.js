@@ -1,10 +1,11 @@
 'use strict'
 
 require('dotenv').config();
-const { app, PORT, sequelizeDatabase } = require("./src/server");
+const { app, PORT } = require("./src/server");
+const { db } = require('./src/auth/models/')
 
 
-sequelizeDatabase.sync()
+db.sync()
 .then(() => {
   console.log('successful connection');
   app.listen(PORT, () => console.log('listening on port: ', PORT));
