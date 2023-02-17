@@ -10,14 +10,15 @@ Basic Authentication template.
 
 ### Links and Resources
 
-- [ci/cd](https://github.com/tyler-bennett52/basic-api-server/actions) (GitHub Actions)
-- [back-end server url](https://basic-api-server-hjih.onrender.com) (when applicable)
+- [ci/cd](https://github.com/tyler-bennett52/basic-auth/actions/) (GitHub Actions)
+- [back-end server url](https://basic-auth-0r65.onrender.com) (when applicable)
 
 ### Setup
 
 #### `.env` requirements (where applicable)
 
-DB_URL requires a postgres DB url
+DATABASE_URL requires a postgres DB url
+
 #### How to initialize/run your application (where applicable)
 
 - `node index.js`
@@ -26,19 +27,20 @@ DB_URL requires a postgres DB url
 
 #### Features / Routes
 
-Dynamic API Phase 2: Perform CRUD Operations on a database
+Authentication System Phase 1: Deploy an Express server that implements Basic Authentication, with signup and signin capabilities, using a Postgres database for storage.
 
 #### Tests
 
 fill this in as you see fit
+
 - How do you run tests? npm test
 - Any tests of note? no
 - Describe any tests that you did not complete, skipped, etc.
 
 #### UML
 
-![Lab-03 UML](assets/lab-03-uml.png)
+![Lab-06 UML](assets/lab-06-uml.png)
 
 #### Attribution
 
-Relied heavily on the template provided in the class demo to determine the structure of this server
+I used the live demo code thinking that was the starter code. I see now there is actual starter code and there are some differences but I am in too deep to go back now.
