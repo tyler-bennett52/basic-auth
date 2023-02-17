@@ -16,7 +16,7 @@ router.post('/signup', async (req, res, next) => {
       username, 
       password: encryptedPassword,
     });
-    res.status(200).send(newUser);
+    res.status(201).send(newUser);
   } catch (e){
     next(e);
   }
