@@ -43,4 +43,4 @@ fill this in as you see fit
 
 #### Attribution
 
-I used the live demo code thinking that was the starter code. I see now there is actual starter code and there are some differences but I am in too deep to go back now.
+I used the live demo code thinking that was the starter code. I see now there is actual starter code and there are some slight differences but I am in too deep to go back now.
