@@ -1,3 +1,9 @@
+'use strict';
+
+const base64 = require('base-64');
+const bcrypt = require('bcrypt');
+const { userModel } = require('../models')
+
 const basicAuth = async(req, res, next) => {
   // console.log(req);
   let { authorization } = req.headers;
