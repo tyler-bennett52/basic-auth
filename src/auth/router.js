@@ -22,7 +22,6 @@ router.post('/signup', async (req, res, next) => {
   }
 });
 
-// starter code will different
 router.post('/signin', basicAuth, (req, res, next) => {
   res.status(200).send(req.user);
 });
